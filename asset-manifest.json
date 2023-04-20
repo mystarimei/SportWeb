@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/SportWeb/static/css/main.8708dcde.css",
+    "main.js": "/SportWeb/static/js/main.d401c06b.js",
+    "static/media/running.mp4": "/SportWeb/static/media/running.ee298a608a4f84b6b6e6.mp4",
+    "static/media/woman.jpg": "/SportWeb/static/media/woman.268d229cc2acfa4a2929.jpg",
+    "static/media/man.jpg": "/SportWeb/static/media/man.ee4e00cbd19d40add56f.jpg",
+    "static/media/img1.jpg": "/SportWeb/static/media/img1.ac5803e6a9ca8031478c.jpg",
+    "static/media/kid.jpg": "/SportWeb/static/media/kid.ac47a34bbdb5afddc971.jpg",
+    "static/media/img2.jpg": "/SportWeb/static/media/img2.1de5175e8465ae3dd0a4.jpg",
+    "static/media/airmax2.jpg": "/SportWeb/static/media/airmax2.654a088d1b70b287db69.jpg",
+    "static/media/airmax1.jpg": "/SportWeb/static/media/airmax1.0fc83b6c2ff5012c355c.jpg",
+    "static/media/airmax4.jpg": "/SportWeb/static/media/airmax4.997ab8a1828c111e0957.jpg",
+    "index.html": "/SportWeb/index.html",
+    "main.8708dcde.css.map": "/SportWeb/static/css/main.8708dcde.css.map",
+    "main.d401c06b.js.map": "/SportWeb/static/js/main.d401c06b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8708dcde.css",
+    "static/js/main.d401c06b.js"
+  ]
+}
