@@ -1,0 +1,158 @@
+:root {
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --SecondaryColor: hsl(187, 85%, 43%);
+    --gradinetColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor: hsl(240, 4%, 36%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: rgb(239, 239, 239);
+    --bodyColor: rgb(240, 240, 240);
+    --cardBG: rgb(225, 225, 225);
+    --BG:rgb(245,245,245);
+  }
+
+  .navbar{
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    z-index: 100;
+
+    .navbarOne,.navbarTwo{
+      justify-content: space-between;
+      width: 100%; 
+    }
+    .navbarOne{
+      padding: 0.5rem 3rem;
+      .logo{
+        .icon{
+          font-size: 1.5rem;
+        }
+      }
+      .login{
+        gap: 1rem;
+        cursor: pointer;
+        .text{
+          font-size: 14px;
+        }
+      }
+    }
+    .navbarTwo{
+       background: #fff;
+       padding: 0 3rem;
+      //  justify-content: space-between;
+        .logoDiv{
+          width: 20%;
+          .icon{
+              font-size: 3.5rem;
+            }
+        }
+        .navBarMenu{
+          display: flex;
+          min-width: 620px;
+          // align-items: center;
+          // justify-content: center;
+          // margin: auto;
+          .menu{
+            gap: 1.5rem;
+            .menuItem{
+              font-size: 18px;
+              &:hover{
+                border-bottom: 3px solid #111;
+              }
+            }
+          }
+        }
+        .itemIcon{
+            gap: 1rem;
+            width: 20%;
+              .search{
+                height: 40px;
+                padding: 0 1rem;
+                background: rgb(245,245,245);
+                border-radius: 3rem;
+                gap: 0.5rem;
+                &:hover{
+                  background: rgb(190, 190, 190);
+                }
+                .search-icon{
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  width: 35px;
+                  height: 35px;
+                  border: none;
+                  background: transparent;
+                  &:hover{
+                    background: var(--greyText);
+                    border-radius: 50%;
+                  }
+                  .icon{
+                    font-size: 1.5rem;
+                  }
+                }
+                input{
+                  border: none;
+                  background: none;
+                  outline: none;
+                  width: 100%;
+                  font-size: 16px;
+                  &::placeholder{
+                    font-size: 16px;
+                    color: rgb(211,211,211);
+                  }
+                }
+              }
+              .nav-icon{
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  width: 40px;
+                  height: 40px;
+                  border: none;
+                  background: transparent;
+                  &:hover{
+                    background: var(--greyText);
+                    border-radius: 50%;
+                  }
+                  .icon{
+                    font-size: 1.5rem;
+                  }
+              }
+        }
+    }
+  }
+
+  
+  @media screen and (max-width:960px) {
+    .navbarOne{
+      display: none;
+    }
+
+    .navbarTwo{
+        .navBarMenu{
+          display: none !important;
+        }
+        .itemIcon{
+          width: 50% !important;
+          justify-content: flex-end;
+          .search{
+            background: none !important;
+            padding: 0 !important;
+            input{
+              display: none;
+            }
+          }
+        }
+  }
+}
+
+@media screen and (min-width:960px){
+    .navbarTwo{
+      .itemIcon{
+        .nav-icon:nth-child(4){
+          display: none
+        }
+      }
+    }
+}

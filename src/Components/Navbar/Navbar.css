@@ -1,0 +1,146 @@
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradinetColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 240);
+  --cardBG: rgb(225, 225, 225);
+  --BG:rgb(245,245,245);
+}
+
+.navbar {
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  z-index: 100;
+}
+.navbar .navbarOne, .navbar .navbarTwo {
+  justify-content: space-between;
+  width: 100%;
+}
+.navbar .navbarOne {
+  padding: 0.5rem 3rem;
+}
+.navbar .navbarOne .logo .icon {
+  font-size: 1.5rem;
+}
+.navbar .navbarOne .login {
+  gap: 1rem;
+  cursor: pointer;
+}
+.navbar .navbarOne .login .text {
+  font-size: 14px;
+}
+.navbar .navbarTwo {
+  background: #fff;
+  padding: 0 3rem;
+}
+.navbar .navbarTwo .logoDiv {
+  width: 20%;
+}
+.navbar .navbarTwo .logoDiv .icon {
+  font-size: 3.5rem;
+}
+.navbar .navbarTwo .navBarMenu {
+  display: flex;
+  min-width: 620px;
+}
+.navbar .navbarTwo .navBarMenu .menu {
+  gap: 1.5rem;
+}
+.navbar .navbarTwo .navBarMenu .menu .menuItem {
+  font-size: 18px;
+}
+.navbar .navbarTwo .navBarMenu .menu .menuItem:hover {
+  border-bottom: 3px solid #111;
+}
+.navbar .navbarTwo .itemIcon {
+  gap: 1rem;
+  width: 20%;
+}
+.navbar .navbarTwo .itemIcon .search {
+  height: 40px;
+  padding: 0 1rem;
+  background: rgb(245, 245, 245);
+  border-radius: 3rem;
+  gap: 0.5rem;
+}
+.navbar .navbarTwo .itemIcon .search:hover {
+  background: rgb(190, 190, 190);
+}
+.navbar .navbarTwo .itemIcon .search .search-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  border: none;
+  background: transparent;
+}
+.navbar .navbarTwo .itemIcon .search .search-icon:hover {
+  background: var(--greyText);
+  border-radius: 50%;
+}
+.navbar .navbarTwo .itemIcon .search .search-icon .icon {
+  font-size: 1.5rem;
+}
+.navbar .navbarTwo .itemIcon .search input {
+  border: none;
+  background: none;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+}
+.navbar .navbarTwo .itemIcon .search input::-moz-placeholder {
+  font-size: 16px;
+  color: rgb(211, 211, 211);
+}
+.navbar .navbarTwo .itemIcon .search input::placeholder {
+  font-size: 16px;
+  color: rgb(211, 211, 211);
+}
+.navbar .navbarTwo .itemIcon .nav-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: transparent;
+}
+.navbar .navbarTwo .itemIcon .nav-icon:hover {
+  background: var(--greyText);
+  border-radius: 50%;
+}
+.navbar .navbarTwo .itemIcon .nav-icon .icon {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 960px) {
+  .navbarOne {
+    display: none;
+  }
+  .navbarTwo .navBarMenu {
+    display: none !important;
+  }
+  .navbarTwo .itemIcon {
+    width: 50% !important;
+    justify-content: flex-end;
+  }
+  .navbarTwo .itemIcon .search {
+    background: none !important;
+    padding: 0 !important;
+  }
+  .navbarTwo .itemIcon .search input {
+    display: none;
+  }
+}
+@media screen and (min-width: 960px) {
+  .navbarTwo .itemIcon .nav-icon:nth-child(4) {
+    display: none;
+  }
+}/*# sourceMappingURL=Navbar.css.map */

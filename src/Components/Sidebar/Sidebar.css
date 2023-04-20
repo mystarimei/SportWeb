@@ -1,0 +1,121 @@
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradinetColor: linear-gradient(to right, hsl(187, 85%, 43%), hsl(199, 100%, 33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(240, 4%, 36%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --bodyColor: rgb(240, 240, 240);
+  --cardBG: rgb(225, 225, 225);
+  --BG:rgb(245,245,245);
+}
+
+.sideBar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, var(--greyText), #ffffff);
+  grid-template-rows: 60px auto 1fr;
+  transition: all 0.4s linear;
+  transform: translate(100%);
+  padding: 0 2rem;
+  z-index: 100;
+}
+.sideBar .close-btn {
+  position: absolute;
+  top: 0.9rem;
+  right: 1.7rem;
+  border: none;
+  display: flex;
+  background: transparent;
+  justify-content: center;
+  align-items: center;
+}
+.sideBar .close-btn:hover {
+  background: var(--greyText);
+  border-radius: 50%;
+}
+.sideBar .sideBarMenuOne {
+  flex-direction: column;
+}
+.sideBar .sideBarMenuOne .menuItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 10px 0;
+  border: none;
+  background: transparent;
+  font-size: 1.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.sideBar .sideBarMenuOne .menuItem:hover {
+  transform: translateX(10px);
+}
+.sideBar .sideBarMenuTwo .Jordan {
+  margin-bottom: 8rem;
+}
+.sideBar .sideBarMenuTwo .Jordan a {
+  display: flex;
+  align-items: center;
+}
+.sideBar .sideBarMenuTwo .Jordan a p {
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+.sideBar .sideBarMenuTwo .member {
+  margin-bottom: 2.5rem;
+}
+.sideBar .sideBarMenuTwo .member p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+.sideBar .sideBarMenuTwo .member button {
+  border-radius: 30px;
+  padding: 6px 20px;
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+.sideBar .sideBarMenuTwo .member .signIn {
+  border: none;
+  background: #000;
+  color: #fff;
+}
+.sideBar .sideBarMenuTwo .member .signIn:hover {
+  background: rgb(133, 133, 133);
+}
+.sideBar .sideBarMenuTwo .member .login {
+  border: 1px solid rgb(133, 133, 133);
+}
+.sideBar .sideBarMenuTwo .member .login:hover {
+  border: 1px solid #000;
+}
+.sideBar .sideBarMenuTwo .shoppingCart .menuList .menuItem {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.sideBar .sideBarMenuTwo .shoppingCart .menuList .menuItem .icon {
+  font-size: 1.5rem;
+}
+.sideBar .sideBarMenuTwo .shoppingCart .menuList .menuItem p {
+  margin: 0.5rem 1rem;
+  font-size: 1.5rem;
+}
+
+.activeSidebar {
+  transform: translate(0%);
+}
+
+@media screen and (min-width: 320px) {
+  .sideBar {
+    width: 320px;
+  }
+}/*# sourceMappingURL=Sidebar.css.map */

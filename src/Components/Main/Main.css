@@ -1,0 +1,245 @@
+.Main {
+  width: 100%;
+  height: auto;
+  padding: 84px 2rem 0 2rem;
+}
+.Main .imgContent {
+  width: 100%;
+}
+.Main .mainContent {
+  flex-direction: column;
+  align-items: flex-start;
+  width: calc(100% - 48px);
+  height: 100%;
+  margin-top: 1rem;
+}
+.Main .mainContent .firstLook {
+  margin-bottom: 4px;
+}
+.Main .mainContent .mainTitle {
+  margin-bottom: 1rem;
+  font-weight: 1000;
+  letter-spacing: -2px;
+}
+.Main .mainContent .mainText {
+  margin-bottom: 2rem;
+}
+.Main .mainContent p {
+  font-size: 18px;
+}
+.Main .mainContent .mainBtn {
+  display: flex;
+  gap: 1rem;
+}
+.Main .mainContent .mainBtn button {
+  border-radius: 30px;
+  padding: 6px 20px;
+  font-size: 1.2rem;
+  border: none;
+  background: #000;
+  color: aliceblue;
+  cursor: pointer;
+}
+.Main .mainContent .mainBtn button:hover {
+  background: rgb(133, 133, 133);
+}
+.Main .mainAirMax {
+  margin-top: 84px;
+}
+.Main .mainAirMax .airmaxTitle .title {
+  font-size: 1.5rem;
+}
+.Main .mainAirMax .airmaxGroup {
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+.Main .mainAirMax .airmaxGroup .airmaxContent {
+  width: 100%;
+  height: 100%;
+  gap: 1rem;
+  margin-top: 24px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.Main .mainAirMax .airmaxGroup .airmaxContent .airmaxItem {
+  height: 100%;
+  transition: all 0.3s linear;
+}
+.Main .mainAirMax .airmaxGroup .airmaxContent .airmaxItem:hover {
+  background: #fff;
+}
+.Main .mainAirMax .airmaxGroup .airmaxContent .airmaxItem .airmaxImg {
+  width: 100%;
+  height: 560px;
+  overflow: hidden;
+}
+.Main .mainAirMax .airmaxGroup .airmaxContent .airmaxItem .airmaxImg .product {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.3s linear;
+}
+.Main .mainAirMax .airmaxGroup .airmaxContent .airmaxItem .airmaxImg .product:hover {
+  transform: scale(1.1);
+}
+.Main .mainAirMax .airmaxGroup .airmaxContent .airmaxInfo {
+  width: 100%;
+}
+.Main .mainAirMax .airmaxGroup .airmaxContent .airmaxInfo .info {
+  margin: 1rem;
+  justify-content: space-between;
+}
+.Main .mainAirMax .airmaxGroup .airmaxContent .airmaxInfo .info .infoName {
+  font-weight: 500;
+}
+.Main .mainFeatured {
+  margin-top: 84px;
+}
+.Main .mainFeatured .title {
+  margin-bottom: 24px;
+}
+.Main .mainFeatured .title .text {
+  font-size: 24px;
+}
+.Main .mainFeatured .featuredImg {
+  width: 100%;
+  height: 100%;
+}
+.Main .mainFeatured .featuredText {
+  margin-top: 24px;
+}
+.Main .mainFeatured .featuredText .title {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 48px;
+}
+.Main .mainFeatured .featuredText .desc {
+  margin-top: 24px;
+  font-size: 16px;
+  line-height: 24px;
+}
+.Main .mainFeatured .featuredText button {
+  margin-top: 24px;
+  border-radius: 30px;
+  padding: 6px 20px;
+  font-size: 1.2rem;
+  border: none;
+  background: #000;
+  color: aliceblue;
+  cursor: pointer;
+}
+.Main .mainFeatured .featuredText button:hover {
+  background: rgb(133, 133, 133);
+}
+.Main .mainMustHave {
+  margin-top: 84px;
+}
+.Main .mainMustHave .title {
+  margin-bottom: 24px;
+}
+.Main .mainMustHave .title h2 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+}
+.Main .mainMustHave .mainProduct {
+  gap: 1rem;
+}
+.Main .mainMustHave .mainProduct .productItem {
+  width: 100%;
+  height: 540px;
+}
+.Main .mainMustHave .mainProduct .productItem .productImg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.Main .mainMustHave .mainProduct .productItem .productImg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Main .mainMustHave .mainProduct .productItem .productImg .productBtn {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+}
+.Main .mainMustHave .mainProduct .productItem .productImg .productBtn button {
+  margin-top: 24px;
+  border-radius: 30px;
+  padding: 6px 20px;
+  font-size: 1.2rem;
+  border: none;
+  background: aliceblue;
+  color: #111;
+  cursor: pointer;
+}
+.Main .mainMustHave .mainProduct .productItem .productImg .productBtn button:hover {
+  background: rgb(211, 211, 211);
+}
+.Main .mainFooter {
+  grid-template-columns: repeat(4, 1fr);
+  margin: auto;
+  margin-top: 84px;
+  margin-bottom: 56px;
+  max-width: 880px;
+  align-items: start;
+  gap: 2rem;
+}
+.Main .mainFooter h4 {
+  margin-bottom: 24px;
+  font-size: 18px;
+  font-weight: 800;
+}
+.Main .mainFooter .groupFooter {
+  cursor: pointer;
+}
+.Main .mainFooter .groupFooter .footerMenu .list .item {
+  margin-bottom: 12px;
+  color: #757575;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.Main .mainFooter .groupFooter .footerMenu .list .item:hover {
+  color: #111;
+}
+
+@media screen and (min-width: 1140px) {
+  .mainAirMax .airmaxGroup {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+@media screen and (min-width: 960px) {
+  .mainContent {
+    align-items: center !important;
+    text-align: center;
+    margin-top: 48px !important;
+  }
+  .mainContent .mainTitle {
+    font-size: 72px !important;
+  }
+  .mainFeatured .featuredText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 48px !important;
+  }
+  .mainFeatured .featuredText .title {
+    font-size: 72px !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .mainMustHave .mainProduct {
+    flex-direction: column;
+  }
+  .mainFooter {
+    grid-template-columns: repeat(1, 1fr) !important;
+    gap: 0 !important;
+  }
+  .mainFooter .groupFooter .footerMenu .list .item {
+    display: none;
+  }
+}/*# sourceMappingURL=Main.css.map */

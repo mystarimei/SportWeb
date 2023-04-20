@@ -1,0 +1,185 @@
+.footer {
+  position: absolute;
+  width: 100%;
+  min-height: 200px;
+  background: #111;
+  transition: all 0.2s linear;
+  transform: translateY(-75%);
+}
+.footer .footerContainer {
+  align-items: flex-start;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  max-width: 1440px;
+  padding: 40px 20px 0 20px;
+  margin-bottom: 24px;
+}
+.footer .footerContainer .footerLink {
+  font-size: 14px;
+  width: 70%;
+  align-items: flex-start;
+}
+.footer .footerContainer .footerLink .linkGroup {
+  width: 33%;
+}
+.footer .footerContainer .footerLink .linkGroup .linkBtn {
+  border: none;
+  background: transparent;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.footer .footerContainer .footerLink .linkGroup .linkBtn li {
+  display: none;
+}
+.footer .footerContainer .footerLink .linkGroup .linkList {
+  max-height: 500px;
+}
+.footer .footerContainer .footerLink .linkGroup .linkList .linkItem {
+  margin-bottom: 1rem;
+  cursor: pointer;
+  color: #7e7e7e;
+}
+.footer .footerContainer .footerLink .linkGroup .linkList .linkItem:hover {
+  color: #fff;
+}
+.footer .footerContainer .footerLink .linkGroup2 {
+  display: none;
+}
+.footer .footerContainer .socialLink {
+  font-size: 14px;
+  width: 30%;
+  justify-content: flex-end;
+}
+.footer .footerContainer .socialLink .socialList {
+  gap: 1rem;
+}
+.footer .footerContainer .socialLink .socialList .socialItem {
+  display: flex;
+  text-align: center;
+  padding: 0.4rem;
+  background: #7e7e7e;
+  border-radius: 50%;
+  transition: all 0.3s linear;
+}
+.footer .footerContainer .socialLink .socialList .socialItem:hover {
+  background: #fff;
+}
+.footer .footerContainer .socialLink .socialList .socialItem .icon {
+  font-size: 20px;
+}
+.footer .subFooter {
+  width: 100%;
+  justify-content: space-between;
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 20px;
+  font-size: 14px;
+  padding-bottom: 1rem;
+}
+.footer .subFooter .copyRight {
+  padding-bottom: 12px;
+}
+.footer .subFooter .copyRight .location {
+  color: #fff;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+.footer .subFooter .copyRight .location .icon {
+  font-size: 20px;
+}
+.footer .subFooter .grey {
+  color: #7e7e7e;
+  margin-left: 2rem;
+}
+.footer .subFooter .illustrate .footerMenu {
+  gap: 1.5rem;
+}
+.footer .subFooter .illustrate .footerMenu .footerItem {
+  color: #7e7e7e;
+}
+.footer .subFooter .illustrate .footerMenu .footerItem:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.mouseOver {
+  transform: translateY(0%);
+}
+
+.white {
+  color: #fff !important;
+}
+
+.closeLinklist {
+  max-height: 0px;
+}
+.closeLinklist .linkItem {
+  display: none;
+}
+
+@media screen and (max-width: 598px) {
+  .footer {
+    transform: translateY(0%);
+  }
+  .footer .footerContainer {
+    flex-direction: column;
+    padding: 40px 10px 0 10px;
+  }
+  .footer .footerContainer .footerLink {
+    flex-direction: column;
+    width: 100%;
+  }
+  .footer .footerContainer .footerLink .linkGroup {
+    display: none;
+  }
+  .footer .footerContainer .footerLink .linkGroup2 {
+    display: inline;
+    width: 100%;
+    padding: 10px 10px;
+    border-bottom: 1px solid #7e7e7e;
+  }
+  .footer .footerContainer .footerLink .linkGroup2 .linkBtn {
+    border: none;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .footer .footerContainer .footerLink .linkGroup2 .linkBtn li {
+    display: inline;
+  }
+  .footer .footerContainer .footerLink .linkGroup2 .linkBtn li .icon {
+    font-size: 1rem;
+    color: #fff;
+  }
+  .footer .footerContainer .footerLink .linkGroup2 .linkList {
+    max-height: 500px;
+  }
+  .footer .footerContainer .footerLink .linkGroup2 .linkList .linkItem {
+    margin-bottom: 1rem;
+    cursor: pointer;
+    color: #7e7e7e;
+  }
+  .footer .footerContainer .footerLink .linkGroup2 .linkList .linkItem:hover {
+    color: #fff;
+  }
+  .footer .footerContainer .socialLink {
+    width: 100%;
+    padding-left: 10px;
+    margin-top: 16px;
+    justify-content: flex-start;
+  }
+  .subFooter {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .subFooter .illustrate .footerMenu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}/*# sourceMappingURL=Footer.css.map */
